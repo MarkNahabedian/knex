@@ -1,0 +1,243 @@
+<html>
+  <head>
+    <title>
+      Switch for K`nex motor
+    </title>
+  </head>
+  <body>
+
+    <h2>Background</h2>
+
+    <p>
+      The motor's power comes from an AC adapter that produces 12VDC
+      at 500ma.
+    </p>
+
+    <p>
+      The power adapter connects to the motor via a mini power plug
+      2.1mm in diameter and 9mm long.
+      <b>I don't know the inside pin diameter.</b>
+    </p>
+
+    <p>
+      The switch is to be mounted in the center hole of a connector.
+      That hole is 0.25" in diameter.  The connectors are 0.25" thick.
+    </p>
+
+
+    <h2>Printed Circuit Board</h2>
+
+    <p>
+      The recommended trace width for 0.5A ia 0.02".
+    </p>
+    <p>
+      The recommended gap between traces is 0.01".
+    </p>
+    <p>
+      For low density boards recommended grid snap is 0.05 inch (1.27mm).
+    </p>
+
+    <p>
+      <a href="http://www.expresspcb.com/">ExpressPCB</a>
+      will produce three 3.8 x 2.5 inch boards for $62.00.
+      A CAD tool is available from their web site.
+    </p>
+
+    <p>
+      <a href="http://www.cadsoftusa.com/">
+        CADSoft EAGLE
+      </a>
+      is another possibility for printed circuit board layout.
+      <b>
+        Will its output work for the ExpressPCB service?
+      </b>
+    </p>
+
+
+    <h2>Connectors</h2>
+
+    <p>
+      See Digi-Key part numbers SC1052-ND (plug) and SC1153-ND (jack)
+      from this
+      <a href="http://dkc3.digikey.com/PDF/T032/0234.pdf">
+        DigiKey catalog page.
+      </a>,
+      <a href="http://dkc3.digikey.com/PDF/T051/0273-0277.pdf">
+      or this</a>.
+      These parts match the 2.1mm that I measured below.
+      <a href="http://www.switchcraft.com/products/pdf_files/rapc722_cd.pdf">
+        data sheet for SC1153-ND
+      </a>.
+    </p>
+
+    <p>
+      I measured the inside diameter of the plug by inserting the
+      chuck-end of various drill bits to see what would fit.  A #44
+      bit is too big but a #45 bit can be inserted into the center
+      hole of the plug.
+    </p>
+
+    <table border="1">
+      <tr>
+        <td>#44</td>
+        <td>too big</td>
+        <td>0.085 inch</td>
+        <td>2.15900 mm</td>
+      </tr>
+      <tr>
+        <td>#45</td>
+        <td>fits</td>
+        <td>0.082 inch</td>
+        <td>2.0828 mm</td>
+      </tr>
+    </table>
+
+
+    <h2>Switch</h2>
+
+    <p>
+      We intend to mount the switch in the center hole of a K'nex
+      connector.  That hole is 0.245 inch deep and 0.25 inch in
+      diameter.
+    </p>
+
+    <p>
+      DPDT toggle switch, on-off-on, quarter inch threaded bushing
+      vertical PC mount.
+    </p>
+
+    <p>
+      Not so useful
+      <a href="http://dkc3.digikey.com/pdf/T032/0834-0842.pdf">
+      DigiKey catalog page
+      </a>
+    </p>
+
+    <p>
+      digikey search query:
+      <tt>DPDT toggle switch pc on-off-on</tt>
+      and then filter further by 
+      <tt>PCB</tt>
+    </p>
+
+    <p>
+      Consider these:
+    </p>
+
+    <ul>
+      <li>
+        <a href="http://www.nkkswitches.com/pdf/Etoggles.pdf">
+          NKK E2023P-B
+        </a>
+        bushing is too short, only 0.283 inch.
+        <br />
+        Maximum effectve panel thickness without locking ring or
+        bottom hex nut: 4.7mm (0.185 inch).
+      </li>
+      <li>
+        <a href="http://www.nkkswitches.com/pdf/MtogglesBushing.pdf">
+          NKK M2023{?}{S1 or S4}W03
+        </a>
+        Nominal operating force of 450 grams might be too high.
+      </li>
+      <li>
+        <a href="http://www.nkkswitches.com/pdf/Btoggles.pdf">
+          NKK B23AP
+        </a>
+        Current rating might be too low.  Bushing isn't long enough.
+      </li>
+      <li>
+        ITT Industries, C&amp;K Division 7203P3YCQE
+      </li>
+      <li>
+        ITT Industries, C&amp;K Division T203L1TKCQE
+      </li>
+      <li>
+        <a href="http://www.e-switch.com/pdf/Series100Toggle.pdf">
+          E-Switch series 100
+        </a>
+        <dl>
+          <dt> E-Switch 100DP3T2B4VS2RE </dt>
+          <dd>
+            <p>T2 toggle is probably too short.</p>
+          </dd>
+          <dt> <b>E-Switch 100DP3T1B1M2QE</b> </dt>
+          <dd>
+            <p>DigiKey part #EG2414-ND</p>
+            <p>B1 bushing is 0.350" long</p>
+            <p>Contact material Q has sufficient load rating.</p>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <a href="http://www.e-switch.com/pdf/Series200AToggle.pdf">
+          E-Switch 200AWMDP3T1A1M2RE
+        </a>
+        Bushing isn't threaded.
+      </li>
+    </ul>
+
+    <p>
+      Other vendors to look at:
+    </p>
+    <ul>
+      <li>
+        <a href="http://www.4pcb.com/index.htm">
+          Advanced Circuits
+        </a>
+      </li>
+      <li>
+        <a href="http://www.digikey.com/">
+          DigiKey
+        </a>
+      </li>
+      <li>
+        <a href="http://www.maxim-ic.com/">
+          Maxim ICs
+        </a>
+      </li>
+      <li>
+        <a href="http://www.jameco.com">
+          Jameco
+        </a>
+      </li>
+      <li>
+        <a href="http://www.mouser.com">
+          Mouser
+        </a>
+      </li>
+
+    </ul>
+
+    <h2>Detailed Information About Selected parts</h2>
+
+    <p>
+      <b>E-Switch 100DP3T1B1M2QE</b>
+      <a href="http://spec.e-switch.com/T-D/T123010.pdf">
+        data sheet
+      </a>
+    </p>
+
+    <p>
+      <b>Switchcraft RAPC722</b>
+      <a href="http://www.switchcraft.com/products/pdf_files/rapc722_cd.pdf">
+        data sheet
+      </a>
+    </p>
+
+    <h2>Layout Issues</h2>
+
+    <p>
+      Is the body of the connector jacks taller than the body of the switch?
+      The connectors are 11.0mm tall.  The switch is only 8.89mm tall.
+      Therefore 
+      <b>
+        the connectors must be mounted on the opposite side of
+        the pc board from the switch.
+      </b>
+    </p>
+
+
+
+  </body>
+</html>
