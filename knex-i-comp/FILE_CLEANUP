@@ -1,0 +1,75 @@
+
+Review through a browser as edits are made.
+
+CERTIFICATE PROBLEM!!!
+
+
+
+./._Phases.html
+
+./._knex-i-comp.html
+   knex-i-comp.html
+
+   Components/ActuatorCWeight-2.jpg
+   Components/ActuatorCWeight.jpg
+   Components/ActuatorRod.jpg
+   Components/BitAssembly-1.jpg
+   Components/BitAssembly-2.jpg
+   Components/BitAssembly-exploded.jpg
+   Components/BitFrame.jpg
+   Components/SenseRod-bottom.jpg
+   Components/SenseRod-top.jpg
+   Components/SenseRod.jpg
+
+-rwxr-xr-x 1 naha systemd-journal 1484 Jan  5  2008 ./Components/ActuatorCWeight.html	DELETE
+   Components/ActuatorCWeight.html
+-rwxr-xr-x 1 naha systemd-journal 2899 Jan  5  2008 ./StepByStep/ActuatorRodCWeight.html   KEEP
+
+These files require detailed comparisson, not just diffing:
+-rwxr-xr-x 1 naha systemd-journal 2304 Jan  5  2008 ./Components/ActuatorRod.html
+   Components/ActuatorRod.html
+-rwxr-xr-x 1 naha systemd-journal 2490 Jan  5  2008 ./StepByStep/ActuatorRod.html
+
+These files require detailed comparisson, not just diffing:
+-rwxr-xr-x 1 naha systemd-journal 2720 Jan  5  2008 ./Components/BitAssembly.html
+   Components/BitAssembly.html
+-rwxr-xr-x 1 naha systemd-journal 2542 Jan  5  2008 ./StepByStep/BitAssembly.html
+
+-rwxr-xr-x 1 naha systemd-journal 1326 Jan  5  2008 ./Components/BitFrame.html    DELETE
+   Components/BitFrame.html
+-rwxr-xr-x 1 naha systemd-journal 2583 Jan  5  2008 ./StepByStep/BitFrame.html    KEEP
+  fix typos: reods, ywllow, connectorsather
+
+-rwxr-xr-x 1 naha systemd-journal 3226 Jan  5  2008 ./Components/SenseRod.html
+   Components/SenseRod.html
+-rwxr-xr-x 1 naha systemd-journal 3593 Jan  5  2008 ./StepByStep/SenseRod.html
+   StepByStep/SenseRod.html
+
+./Components/Components.html
+   Components/Components.html
+
+./Phases.html
+   Phases.html
+
+./StepByStep/ActuatorBackBlock.html
+
+
+./StepByStep/ActuatorRodDriver.html
+./StepByStep/BackBlockLatch.html
+./StepByStep/BackBlockLifter.html
+./StepByStep/BackBlockRelease.html
+./StepByStep/BitFrame-and-BitAssembly.html
+./StepByStep/BitFrameTop-installed.html
+./StepByStep/BitFrameTop.html
+./StepByStep/BitStateIndicator.html
+./StepByStep/BitStateMask.html
+./StepByStep/ControlFrame.html
+./StepByStep/ControlFrameBack.html
+
+./StepByStep/ProgrammingHardware.html
+   StepByStep/ProgrammingHardware.html
+
+./StepByStep/SenseRodLifter.html
+./StepByStep/index.html
+
+./knex-i-comp.html
