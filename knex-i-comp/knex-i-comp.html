@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Digi-Comp I in knex</title>
+  </head>
+
+  <body>
+    <h1>Digi-Comp I in knex</h1>
+
+    <p>
+      Notes on the construction and operation of a working model of the
+      Digi-Comp I imlemented in knex (tm).
+    </p>
+
+    <p>
+      The original DigiComp I had three bits of state and three
+      control stages.  It was effectively a mechanical programmable
+      logic array (PLA).  This model in 
+      <a href="../knex.html">knex (tm)</a>
+      can be constructed to provide more or fewer bits and more or
+      fewer control stages.
+    </p>
+
+    <ul>
+
+      <!--
+      <li>knex parts:  struts, connectors, other</li>
+      <li>Bit assemblies</li>
+      <li>actuator rods (clock rods in Digi-Comp parlance)</li>
+      <li>sense rods (logic rods in Digi-Comp parlance)</li>
+      <li>control/actuator linkage</li>
+      <li>structural framework:  bit frames, control frame, display</li>
+      <li>mounting of bit assemblies</li>
+      <li>mounting of actuator rods</li>
+      <li>mounting of sense rods</li>
+      <li>linkage between sense and actuator rods</li>
+      <li>weighting of sense rods</li>
+      <li>counterweighting of actuator rods</li>
+      <li>adjustment of programming structures</li>
+
+      <li>
+	<a href="Components/Components.html">Components and Subassemblies</a>
+      </li>
+      -->
+
+      <li>
+	clocking, sequencing and control:  
+	<a href="Phases.html">phases of operation</a>
+      </li>
+
+      <li>
+	<a href="StepByStep/index.html">step by step assembly</a>
+      </li>
+
+    </ul>
+
+    <p>
+      The original Digi-Comp I had three bits of state, each of which
+      was implemented by a red plastic slider with a detent bump
+      underneath so that the slider was forced into one state or the
+      other and could not rest in between.
+    </p>
+
+    <p>
+      The original Digi-Comp I had three control stages.  Each control
+      stage could be "programmed" to set or clear certain bits
+      depending on the states of the bits.  Each control stage had two
+      actuator rods, one for setting bits and one for clearing them.
+      Each control stage also had one sense rod for each actuator rod.
+    </p>
+
+    <p>
+      The original Digi-Comp I had two sets of swinging metal rods,
+      formed in such a way that the center of rotation was displaced
+      from the center of the rod.
+    </p>
+
+    <p>
+      On the front of the machine were the sense rods which sensed
+      what state the bits were in.  On the back were the actuator rods
+      which altered the states of the bits.  Each sense rod was
+      coupled to its corresponding actuator rod at the top of the
+      machine by a loose linkage which would allow the sense rod to
+      push the actuator rod from its off-normal state but would
+      otherwise allow the actuator rod to swing freely.  At the bottom
+      of the assembly was a "clock" which consisted of two complex
+      counter-moving linear cams which served to move the "clock rods"
+      in and out to engage an disengage with any clock tubes which
+      were mounted on the bit assemblies and which would drive any
+      "logic rods" which were displaced from their rest state by their
+      associated clock rod.
+    </p>
+
+    <p>
+      The original Digi-Comp I was programmed by mounting small
+      plastic tubes onto tabs that were present on the bit sliders.
+    </p>
+
+    <p>
+      For our model, each bit assembly will have attatched to the gray
+      strut on the actuator side, two connectors (typically red, the
+      connector must have arity of at least 3 so that it can
+      accomodate a strut perpendicular but off center to the gray
+      strut to which the connector is attatched).  Each of these
+      connectors corresponds to one actuator rod.  If a yellow strut
+      is mounted in the connector then the actuator rod will engage it
+      when it swings, altering the state of the bit.
+    </p>
+
+    <p>
+      Mounted to the other gray strut (on the sense rod side) of the
+      bit assembly are two subassemblies for each sense rod. These
+      subassemblies are composed of two red (arity 3) connectors
+      coupled by a green strut, so as to form the two adjacent corners
+      of a half square.  One of the red connectors is mounted to the
+      gray rod of the bit assembly. The other is alowed to twist on
+      its green struts that its corresponding sense rod can pass free
+      of it when the red connector is twisted vertically and is
+      blocked by the red connector when it is twisted horizontally.
+    </p>
+
+    <p>
+      When a sense rod is blocked by a horizontally twisted red
+      connector, it is prevented from pushing its corresponding
+      actuator rod from its off-normal position.  Otherwise, the
+      actuator rod is moved off-normal and is captured and moved by
+      the linear cam of the clock.  If it encounters a tube mounted on
+      a bit, its motion will alter the state of the bit.
+    </p>
+
+
+
+    <hr>
+    Mark Nahabdian, Cambridge Massachusetts
+<!-- Created: Fri Sep 10 23:05:00 -0400 1999 -->
+<!-- hhmts start -->
+Last modified: Sat Feb 12 20:46:51 Eastern Standard Time 2000
+<!-- hhmts end -->
+  </body>
+</html>

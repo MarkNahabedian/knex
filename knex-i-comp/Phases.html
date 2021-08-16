@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Phases of Operation</title>
+  </head>
+
+  <body>
+    <h1>
+      <a href="knex-i-comp.html">KNEX-I-COMP:</a>
+      Phases of Operation</h1>
+
+    <p>
+      Each cycle of operation of the knex-i-comp consists of six
+      phases:
+    </p>
+
+    <dl>
+
+      <a name="phase1"></a>
+      <dt><b>Phase 1:</b></dt>
+      <dd>
+	The 
+	<a href="StepByStep/SenseRod.html">sense rod</a>s
+	are allowed to drop, each is either obstructed
+	by a horizontally twisted red connector on a
+	<a href="StepByStep/BitAssembly.html">bit assembly</a>
+	or is free to fall and push its corresponding 
+	<a href="StepByStep/ActuatorRod.html">actuator rod</a>
+	off-normal via the sense-actuator linkage.
+      </dd>
+    </a>
+
+    <a name="phase2"></a>
+    <dt><b>Phase 2:</b> </dt>
+    <dd>
+      The 
+      <a href="StepByStep/ActuatorBackBlock.html">actuator back-block</a>
+      is raised and latched in place, preventing those 
+      <a href="StepByStep/ActuatorRod.html">actuator rod</a>s
+      which are off-normal from returning to their rest state when the
+      <a href="StepByStep/SenseRod.html">sense rod</a>s
+      are lifted in phase 3.
+    </dd>
+
+    <a name="phase3"></a>
+    <dt><b>Phase 3:</b></dt>
+    <dd>
+      The 
+      <a href="StepByStep/SenseRod.html">sense rod</a>s
+      are lifted.  This must occur before the 
+      <a href="StepByStep/ActuatorRod.html">actuator rod</a>s
+      alter any of the bits, otherwise the sense rods might collide
+      with the sense programming hardware as the bits change state.
+    </dd>
+
+    <a name="phase4"></a>
+    <dt><b>Phase 4:</b></dt>
+    <dd>
+      Those
+      <a href="StepByStep/ActuatorRod.html">actuator rod</a>s
+      which are off-normal (held there by the
+      <a href="StepByStep/ActuatorBackBlock.html">back-block</a>)
+      are driven by the 
+      <a href="StepByStep/ActuatorRodDriver.html">actuator rod driver</a>s
+      so that they engage the yellow program struts to alter the
+      states of the bits.
+    </dd>
+
+    <a name="phase5"></a>
+    <dt><b>Phase 5:</b></dt>
+    <dd>
+      The 
+      <a href="StepByStep/ActuatorBackBlock.html">back-block</a>
+      is unlatched and allowed to fall so that the
+      <a href="StepByStep/ActuatorRod.html">actuator rod</a>s
+      can return to their normal at-rest positions.
+    </dd>
+
+    <a name="phase6"></a>
+    <dt><b>Phase 6:</b></dt>
+    <dd>
+      The
+      <a href="StepByStep/ActuatorRodDriver.html">actuator rod driver</a>s
+      are returned to their normal positions, allowing the
+      <a href="StepByStep/ActuatorRod.html">actuator rod</a>s
+      to return to normal.
+    </dd>
+
+    </dl>
+
+
+    <hr>
+    Mark Nahabdian, Cambridge Massachusetts
+<!-- Created: Sat Sep 11 08:31:16 -0400 1999 -->
+<!-- hhmts start -->
+Last modified: Sun Nov 14 09:13:14 Eastern Standard Time 1999
+<!-- hhmts end -->
+  </body>
+</html>
